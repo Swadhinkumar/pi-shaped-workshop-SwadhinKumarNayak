@@ -5,8 +5,8 @@ This is a simple Flask-based "Hello, World!" REST API that was containerized usi
 ## How to Run
 
 ```bash
-git clone https://github.com/yourusername/pi-shaped-workshop-RupaliGupta.git
-cd pi-shaped-workshop-RupaliGupta/docker-k8s-workshop/day2
+git clone https://github.com/yourusername/pi-shaped-workshop-SwadhinKumarNayak.git
+cd pi-shaped-workshop-SwadhinKumarNayak/docker-k8s-workshop/day2
 kubectl label nodes <node-name> disktype=ssd
 kubectl taint nodes <node-name>  env=dev:NoSchedule
 kubectl apply -f Deployment.yaml
