@@ -2,14 +2,17 @@
 Overview
 This is a simple Flask-based "Hello, World!" REST API that was containerized using Docker (from Day 1) and now deployed on Kubernetes using pod scheduling with node affinity , Limited resources and tolerations.
 
-# How to Run
-git clone https://github.com/yourusername/pi-shaped-workshop-SwadhinKumarNayak.git
-cd pi-shaped-workshop-SwadhinKumarNayak/docker-k8s-workshop/day2
+## How to Run
+
+```bash
+git clone https://github.com/yourusername/pi-shaped-workshop-RupaliGupta.git
+cd pi-shaped-workshop-RupaliGupta/docker-k8s-workshop/day2
 kubectl label nodes <node-name> disktype=ssd
 kubectl taint nodes <node-name>  env=dev:NoSchedule
 kubectl apply -f Deployment.yaml
 kubectl get pods -o wide
 kubectl port-forward pod/flask-hello-pod-affinity 8080:8080  #Access the Flask App
+```
 
 # Core Concept Questions
 1. Why do we set requests and limits for CPU/memory in a production-grade product?
