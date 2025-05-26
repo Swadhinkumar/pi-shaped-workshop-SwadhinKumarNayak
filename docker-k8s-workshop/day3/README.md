@@ -7,21 +7,22 @@ kubectl configured for Minikube
 Docker installed
 Minikube ingress addon enabled:
 minikube addons enable ingress
-Step 1: Clone the Repo
-git clone https://github.com/Rupali1520/pi-shaped-workshop-RupaliGupta.git
-cd pi-shaped-workshop-RupaliGUpta/docker-k8s-workshop/day3
-Step 2: Apply Deployment & Service
+
+# Step 1: Clone the Repo
+git clone https://github.com/Swadhinkumar/pi-shaped-workshop-SwadhinKumarNayak.git
+cd pi-shaped-workshop-SwadhinKumarNayak/docker-k8s-workshop/day3
+# Step 2: Apply Deployment & Service
 kubectl apply -f deployment.yaml
 kubectl apply -f clusterip-service.yaml
-Step 3: Apply Ingress Recource
+# Step 3: Apply Ingress Recource
 kubectl apply -f ingress.yaml
-Step 4: Update /etc/hosts for Domain Resolution
+# Step 4: Update /etc/hosts for Domain Resolution
 sudo nano /etc/hosts
 192.168.49.2 flask-hello.local //Add this line at the end:
-Step 5: Access the App
+# Step 5: Access the App
 Now open your browser and go to: http://flask-hello.local/hello
 
-Core Concept Questions
+# Core Concept Questions
 1. How would you expose an internal microservice (e.g., user-auth) differently than a public-facing frontend in a Kubernetes-based product?
 For internal microservices like user-auth, we use ClusterIP service to make them accessible only within the cluster. This ensures security and keeps internal logic isolated.
 
